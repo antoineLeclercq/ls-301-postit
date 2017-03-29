@@ -1,4 +1,4 @@
-https://postit-antoineleclercq.herokuapp.com/
+https://postit-antoineleclercq.herokuapp.com
 
 Features:
 - Built with Ruby 2 and Rails 4
