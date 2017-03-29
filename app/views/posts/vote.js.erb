@@ -1,0 +1,5 @@
+<% if @vote.valid? %>
+  $('.post[data-id="<%= @post.id %>"] .votes-count').text('<%= @post.net_votes_count %>');
+<% else %>
+  alert('You can only vote once on this post');
+<% end %>

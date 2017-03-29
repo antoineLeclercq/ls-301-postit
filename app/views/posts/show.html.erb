@@ -1,4 +1,4 @@
-<% if logged_in? && current_user == @post.creator %>
+<% if logged_in? && (creator? || current_user.admin?) %>
   <p class="pull-right">
     [<%= link_to "edit post", edit_post_path(@post) %>]
   </p>
@@ -25,4 +25,4 @@
 <% end %>
 
 <h4>Comments:</h4>
-<%= render @post.comments %>
+<%= render @post.reload.comments %>
